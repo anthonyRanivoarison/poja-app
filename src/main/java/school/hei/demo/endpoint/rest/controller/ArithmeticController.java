@@ -15,22 +15,22 @@ public class ArithmeticController {
 
   private final ArithmeticService arithmeticService;
 
-  @GetMapping("/arithmetic/add")
+  @GetMapping("/add")
   public ArithmeticResult add(@RequestParam Double a, @RequestParam Double b) {
     return arithmeticService.add(a, b);
   }
 
-  @GetMapping("/arithmetic/subtract")
+  @GetMapping("/subtract")
   public ArithmeticResult subtract(@RequestParam Double a, @RequestParam Double b) {
     return arithmeticService.subtract(a, b);
   }
 
-  @GetMapping("/arithmetic/multiply")
+  @GetMapping("/multiply")
   public ArithmeticResult multiply(@RequestParam Double a, @RequestParam Double b) {
     return arithmeticService.multiply(a, b);
   }
 
-  @GetMapping("/arithmetic/divide")
+  @GetMapping("/divide")
   public ArithmeticResult divide(@RequestParam Double a, @RequestParam Double b) {
     return arithmeticService.divide(a, b);
   }
